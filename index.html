@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume</title>
+    <link rel="shortcut icon"
+        href="https://th.bing.com/th/id/R.20b410ec3d145d10f470b8adb25aba45?rik=BfUtYRsb73hIJA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_127435.png&ehk=6%2bk8knqFJlOQlXz9cC3nTENF1d8zUfJGo0FELjYUgUc%3d&risl=&pid=ImgRaw&r=0"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/R.20b410ec3d145d10f470b8adb25aba45?rik=BfUtYRsb73hIJA&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_127435.png&ehk=6%2bk8knqFJlOQlXz9cC3nTENF1d8zUfJGo0FELjYUgUc%3d&risl=&pid=ImgRaw&r=0"
+            alt="">
+        <h2 onClick="back()">Volume </h2>
+        <div>
+            <ul>
+                <li>
+                    <p onclick="scroll_cubo()">Cubo</p>
+                </li>
+                <li>
+                    <p onclick="scroll_piramide()">Piramide</p>
+                </li>
+                <li>
+                    <p onclick="scroll_cone()">Cone</p>
+                </li>
+                <li>
+                    <p onclick="scroll_prisma()">Prisma</p>
+                </li>
+                <li>
+                    <p onclick="scroll_esfera()">Esfera</p>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section id="search">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <div id="quote">
+        <h2>"Não importa quanto a vida possa ser ruim,<br> sempre existe algo que você pode fazer, e triunfar.<br> Enquanto há vida, há esperança."</h2>
+        <h3>- Stephen Hawking</h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="section_1">
+            <div>  
+                <br>
+                <h2>Cubo</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <br>
+                <form>
+                    <label for="text">Digite o comprimeto da aresta: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="cube" id="cube">
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" onClick="cubo()">Calcular</button>
+                    <br>
+                </form>
+                <nav>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/70/70665.png" alt="">
+                        <br>
+                        <br>
+                        <br>
+                        <h2 id="valor_cube">Volume = ?</h2>
+                    </div>
+                    <section id="text">
+                        <hr>
+                        <h3>V = a³</h3>
+                        <h5>"Para entender a fórmula do volume do cubo, lembraremos as suas principais características. O cubo é um caso particular de poliedro. Ele é formado por 6 faces quadradas, 12 arestas e 8 vértices. No cubo, todas as arestas são congruentes. Além de poliedro, o cubo é considerado um paralelepípedo, já que todas as suas faces são formadas por quadrados."</h5>
+                        <hr>
+                    </section>
+                </nav>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="section_2">
+            <div>  
+                <br>
+                <h2>Piramide</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <br>
+                <form>
+                    <label for="text">Digite a área da base: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="pir_base" id="pir_base">
+                    <br>
+                    <br>
+                    <label for="text">Digite a altura: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="pir_alt" id="pir_alt">
+                    <br>
+                    <br>
+                    <button type="button" onClick="piramide()">Calcular</button>
+                    <br>
+                </form>
+                <nav>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6348/6348344.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6895/6895480.png" alt="">
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <h2 id="valor_pir">Volume = ?</h2>
+                    <section id="text">
+                        <hr>
+                        <h3>V = Ab . h ÷ 3</h3>
+                        <h5>"O volume da pirâmide é calculado pela multiplicação entre a área da base e a altura, dividindo por três. Para calcular o volume da pirâmide, é necessário saber qual é o polígono que forma a base dessa pirâmide, e, por isso, para cada base, utilizamos uma fórmula diferente para encontrar a sua área. Podemos relacionar o volume do prisma com o volume de uma pirâmide de mesma altura e mesma área da base, pois o volume da pirâmide é igual a um terço do volume do prisma."</h5>
+                        <hr>
+                    </section>
+                </nav>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="section_3">
+            <div>  
+                <br>
+                <h2>Cone</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <br>
+                <form>
+                    <label for="text">Digite o raio da base: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="cone_raio" id="cone_raio">
+                    <br>
+                    <br>
+                    <label for="text">Digite a altura: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="cone_alt" id="cone_alt">
+                    <br>
+                    <br>
+                    <label for="text">Digite o valor de π: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="cone_pi" id="cone_pi">
+                    <br>
+                    <br>
+                    <br>
+                    <button type="button" onClick="cone()">Calcular</button>
+                    <br>
+                </form>
+                <nav>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6895/6895357.png" alt="">
+                        <br>
+                        <br>
+                        <br>
+                        <h2 id="valor_cone">Volume = ?</h2>
+                    </div>
+                    <section id="text">
+                        <hr>
+                        <h3>V = π . r² . h ÷ 3</h3>
+                        <h5>"O volume do cone é a medida da capacidade desse sólido geométrico. Seu valor é obtido multiplicando-se a medida da área de sua base (Ab) por sua altura (h), dividindo, em seguida, o resultado por três."</h5>
+                        <hr>
+                    </section>
+                </nav>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="section_4">
+            <div>  
+                <br>
+                <h2>Prisma</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <br>
+                <form>
+                    <label for="text">Digite o valor do lado: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="prism_lado" id="prism_lado">
+                    <br>
+                    <br>
+                    <label for="text">Digite a altura: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="prism_alt" id="prism_alt">
+                    <br>
+                    <br>
+                    <button type="button" onClick="prisma_tri()">Calcular <img src="https://cdn-icons-png.flaticon.com/512/6895/6895458.png" alt=""></button>
+                    <button type="button" onClick="prisma_hex()">Calcular <img src="https://cdn-icons-png.flaticon.com/512/6348/6348360.png" alt=""></button>
+                    <br>
+                </form>
+                <nav>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/6348/6348360.png" alt="">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6895/6895458.png" alt="">
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <h2 id="valor_prisma">Volume = ?</h2>
+                    <section id="text">
+                        <hr>
+                        <h3>V = Ab . h</h3>
+                        <h5>"Os prismas são sólidos geométricos cujas faces laterais são paralelogramos que possuem duas bases poligonais congruentes e paralelas. O volume dos prismas é uma forma de mensurar a quantidade de espaço ocupada por eles a partir de algumas de suas medidas. O volume também é conhecido como capacidade."</h5>
+                        <hr>
+                    </section>
+                </nav>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="section_5">
+            <div>  
+                <br>
+                <h2>Esfera</h2>
+                <hr class="linha">
+                <hr id="linha_middle">
+                <br>
+                <br>
+                <br>
+                <form>
+                    <label for="text">Digite o valor do raio: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="esfera_raio" id="esfera_raio">
+                    <br>
+                    <br>
+                    <label for="text">Digite o valor de π: </label>
+                    <br>
+                    <br>
+                    <input type="text" name="esfera_pi" id="esfera_pi">
+                    <br>
+                    <br>
+                    <button type="button" onClick="esfera()">Calcular</button>
+                    <br>
+                </form>
+                <nav>
+                    <div>
+                        <img src="https://cdn-icons-png.flaticon.com/512/274/274401.png" alt="">
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <h2 id="valor_esfera">Volume = ?</h2>
+                    <section id="text">
+                        <hr>
+                        <h3>V = 4 . π . r³ ÷ 3</h3>
+                        <h5>"O volume da esfera é calculado pela fórmula: V = 4 3 π r 3 Identificando os elementos da esfera Existem dois elementos fundamentais da esfera, que são o centro e o raio. Quando definimos os definimos, temos que a esfera é o conjunto formado por todos os pontos que estão a uma distância igual ou menor que o comprimento do raio."</h5>
+                        <hr>
+                    </section>
+    </main>
+    <footer>
+        <h4>Copyright © 2022 - _a5ur4</h4>
+    </footer>
+</body>
+
+</html>

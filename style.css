@@ -1,0 +1,681 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bgcolor);
+    font-family: var(--fontchivomono);
+    overflow-x: hidden;
+}
+
+:root {
+    --darkpurple: #441C55;
+    --bgcolor: #1b0424;
+    --h2color: #DC9200;
+    --fontchivomono: 'Chivo Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--darkpurple);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    height: 10px;
+    background-color: var(--h2color);
+}
+
+header {
+    display: flex;
+    background-color: #4116535f;
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    margin-left: 25px;
+    height: 40px;
+    width: 40px;
+    padding: 40px;
+    margin-right: -30px;
+}
+
+header h2 {
+    color: var(--h2color);
+    cursor: pointer;
+}
+
+header div {
+    margin-left: 500px;
+    margin-top: 3px;
+}
+
+header ul li {
+    color: #F5F5F5;
+    transition: 0.5s ease-in-out;
+    list-style: none;
+    display: inline-flex;
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header ul li :hover {
+    color: var(--h2color);
+    text-decoration: underline;
+}
+
+header ul li ::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: var(--h2color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+header li :hover::after {
+    width: 100%;
+}
+
+header h2 {
+    padding: 25px;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 70px;
+    height: 70px;
+    animation: spinner-y0fdc1 2s infinite ease;
+    transform-style: preserve-3d;
+}
+
+.spinner>div {
+    background-color: #dc93003e;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border: 2px solid var(--h2color);
+}
+
+.spinner div:nth-of-type(1) {
+    transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+    transform: rotateY(-270deg) translateX(50%);
+    transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+    transform: rotateY(270deg) translateX(-50%);
+    transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+    transform: rotateX(90deg) translateY(-50%);
+    transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+    transform: rotateX(-90deg) translateY(50%);
+    transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+    transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+    0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    }
+
+    50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    }
+
+    100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    }
+}
+
+#quote {
+    text-align: center;
+    color: var(--h2color);
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+#redirect {
+    color: #F5F5F5;
+}
+
+#redirect ul li {
+    display: inline-flex;
+    list-style: none;
+    margin-top: 140px;
+}
+
+#section_1 {
+    border: 2px solid var(--h2color);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    color: var(--h2color);
+}
+
+#section_1 form {
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#section_1 h2 {
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.linha {
+    border: 1px solid var(--h2color);
+    width: 100px;
+}
+
+#linha_middle {
+    border: 1px solid var(--h2color);
+    width: 200px;
+}
+
+#section_1 label {
+    font-weight: bold;
+}
+
+#section_1 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_1 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_1 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_1 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px var(--h2color);
+}
+
+#section_1 nav div {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--h2color);
+    margin: 0 auto;
+    margin-top: -150px;
+}
+
+#section_1 nav img{
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#text {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -210px;
+    width: 400px;
+}
+
+#text hr{
+    border: var(--h2color) 1px solid;
+}
+
+#text h3 {
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+.linha {
+    border: 1px solid var(--h2color);
+    width: 100px;
+}
+
+#linha_middle {
+    border: 1px solid var(--h2color);
+    width: 200px;
+}
+
+#section_2 {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: var(--h2color);
+}
+
+#section_2 form {
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#section_2 h2 {
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#section_2 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_2 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_2 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_2 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px var(--h2color);
+}
+
+#section_2 nav div {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: var(--h2color);
+    margin: 0 auto;
+    margin-top: -200px;
+    display: flex;
+}
+
+#section_2 nav img{
+    width: 130px;
+    height: 130px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section_2 #text {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -270px;
+    width: 400px;
+}
+
+#section_2 #text hr{
+    border: var(--h2color) 1px solid;
+}
+
+#section_2 #text h3 {
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+#section_3 {
+    border: 2px solid var(--h2color);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    color: var(--h2color);
+}
+
+#section_3 form {
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#section_3 h2 {
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#section_3 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_3 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_3 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_3 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px var(--h2color);
+}
+
+#section_3 nav div {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--h2color);
+    margin: 0 auto;
+    margin-top: -305px;
+}
+
+#section_3 nav img{
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section_3 #text {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -200px;
+    width: 400px;
+}
+
+#section_3 #text hr{
+    border: var(--h2color) 1px solid;
+}
+
+#section_3 #text h3 {
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+#section_4 {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: var(--h2color);
+}
+
+#section_4 form {
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#section_4 h2 {
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#section_4 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_4 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_4 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_4 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px var(--h2color);
+}
+
+#section_4 button img {
+    height: 20px;
+    width: 20px;
+}
+
+#section_4 nav div {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: var(--h2color);
+    margin: 0 auto;
+    margin-top: -200px;
+    display: flex;
+}
+
+#section_4 nav img{
+    width: 130px;
+    height: 130px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section_4 #text {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -270px;
+    width: 400px;
+}
+
+#section_4 #text hr{
+    border: var(--h2color) 1px solid;
+}
+
+#section_4 #text h3 {
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+#section_5 {
+    border: 2px solid var(--h2color);
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    color: var(--h2color);
+}
+
+#section_5 form {
+    align-items: left;
+    text-align: left;
+    margin-left: 100px;
+}
+
+#section_5 h2 {
+    color: var(--h2color);
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#section_5 input {
+    text-align: center;
+    height: 20px;
+    width: 200px;
+    background-color: var(--darkpurple);
+    border: var(--h2color) 1px solid;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    color: var(--h2color);
+}
+
+#section_5 input:focus {
+    height: 25px;
+    width: 250px;
+    box-shadow: 0px 0px 34px var(--h2color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section_5 button {
+    background-color: var(--darkpurple);
+    color: var(--h2color);
+    border: var(--h2color) 1px solid;
+    height: 50px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+#section_5 button:hover {
+    height: 55px;
+    width: 160px;
+    background-color: var(--h2color);
+    color: var(--darkpurple);
+    box-shadow: 0px 0px 34px var(--h2color);
+}
+
+#section_5 button img {
+    height: 20px;
+    width: 20px;
+}
+
+#section_5 nav div {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: var(--h2color);
+    margin: 0 auto;
+    margin-top: -205px;
+}
+
+#section_5 nav img{
+    width: 150px;
+    height: 150px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#section_5 #text {
+    margin: 0 auto;
+    margin-right: 80px;
+    margin-top: -270px;
+    width: 400px;
+}
+
+#section_5 #text hr{
+    border: var(--h2color) 1px solid;
+}
+
+#section_5 #text h3 {
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+footer {
+    text-align: center;
+    color: var(--h2color);
+    height: 40px;
+    margin-top: 7em;
+    text-shadow: 1px 1px 15px var(--h2color);
+}
+
+
+/*https://www.schemecolor.com/purple-and-gold.php#:~:text=The%20Purple%20And%20Gold%20Color%20Scheme%20palette%20has,and%20CMYK%20codes%20are%20in%20the%20table%20below.*/
