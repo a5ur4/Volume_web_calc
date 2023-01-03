@@ -251,7 +251,7 @@ header h2 {
     margin-top: -150px;
 }
 
-#section_1 nav img{
+#section_1 nav img {
     width: 150px;
     height: 150px;
     text-align: left;
@@ -265,7 +265,7 @@ header h2 {
     width: 400px;
 }
 
-#text hr{
+#text hr {
     border: var(--h2color) 1px solid;
 }
 
@@ -352,7 +352,7 @@ header h2 {
     display: flex;
 }
 
-#section_2 nav img{
+#section_2 nav img {
     width: 130px;
     height: 130px;
     text-align: left;
@@ -368,7 +368,7 @@ header h2 {
     width: 400px;
 }
 
-#section_2 #text hr{
+#section_2 #text hr {
     border: var(--h2color) 1px solid;
 }
 
@@ -447,7 +447,7 @@ header h2 {
     margin-top: -305px;
 }
 
-#section_3 nav img{
+#section_3 nav img {
     width: 150px;
     height: 150px;
     text-align: left;
@@ -463,7 +463,7 @@ header h2 {
     width: 400px;
 }
 
-#section_3 #text hr{
+#section_3 #text hr {
     border: var(--h2color) 1px solid;
 }
 
@@ -545,7 +545,7 @@ header h2 {
     display: flex;
 }
 
-#section_4 nav img{
+#section_4 nav img {
     width: 130px;
     height: 130px;
     text-align: left;
@@ -561,7 +561,7 @@ header h2 {
     width: 400px;
 }
 
-#section_4 #text hr{
+#section_4 #text hr {
     border: var(--h2color) 1px solid;
 }
 
@@ -645,7 +645,7 @@ header h2 {
     margin-top: -205px;
 }
 
-#section_5 nav img{
+#section_5 nav img {
     width: 150px;
     height: 150px;
     text-align: left;
@@ -661,7 +661,7 @@ header h2 {
     width: 400px;
 }
 
-#section_5 #text hr{
+#section_5 #text hr {
     border: var(--h2color) 1px solid;
 }
 
